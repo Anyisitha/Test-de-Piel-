@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test de piel - respuestas</title>
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- Scripts -->
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/functions.js"></script>
+    </head>
+    <body class="ancho">
+        <div class="container">
+            <img src="./img/piel-mixta.jpg" alt="Portada" class="cover-image" id="image"/>
+        </div>
+
+        <!-- Scripts -->
+
+        <script>
+            $(document).ready(function () {
+                let array = JSON.parse(localStorage.getItem("questions"));
+                let azul = array.filter((item) => item.color === "azul").length;
+                let amarillo = array.filter(
+                    (item) => item.color === "amarillo"
+                ).length;
+                let rojo = array.filter((item) => item.color === "rojo").length;
+                let verde = array.filter(
+                    (item) => item.color === "verde"
+                ).length;
+
+                if (
+                    (azul === 1 && amarillo === 1 && rojo === 1) ||
+                    (azul === 1 && amarillo === 1 && verde === 1) ||
+                    (azul === 1 && rojo === 1 && verde === 1) ||
+                    (amarillo === 1 && rojo === 1 && verde === 1)
+                ) {
+                    $("#image").attr("src", "./img/piel-mixta.jpg");
+                }
+
+                if(azul > 1) {
+                    $("#image").attr("src", "./img/piel-normal.jpg");
+                }
+
+                if(amarillo > 1) {
+                    $("#image").attr("src", "./img/piel-grasa.jpg");
+                }
+
+                if(rojo > 1) {
+                    $("#image").attr("src", "./img/piel-mixta.jpg");
+                }
+
+                if(verde > 1) {
+                    $("#image").attr("src", "./img/piel-seca.jpg");
+                }
+
+                $("#image").on("click", () => {
+                    window.localStorage.removeItem("questions")
+                    window.location.href = "./indexref.html"
+                })
+            });
+
+        </script>
+    </body>
+</html>

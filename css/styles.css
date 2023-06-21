@@ -1,0 +1,152 @@
+@import "./variables.css";
+@import "./classes.css";
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .cover-image {
+    width: 100vw;
+    height: auto;
+}
+
+.start-button {
+    position: absolute;
+    bottom: 12.1%;
+    right: 29.1%;
+    width: 8.1%;
+    height: 7.2%;
+}
+
+.start-button1 {
+    position: absolute;
+    top: 28%;
+    left: 11.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button2 {
+    position: absolute;
+    top: 48%;
+    left: 11.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button3 {
+    position: absolute;
+    top: 28%;
+    right: 3.2%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button4 {
+    position: absolute;
+    top: 48%;
+    right: 3.2%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button5 {
+    position: absolute;
+    top: 28%;
+    left: 1.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button6 {
+    position: absolute;
+    top: 48%;
+    left: 1.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button7 {
+    position: absolute;
+    top: 28%;
+    right: 3.2%;
+    width: 18.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button8 {
+    position: absolute;
+    top: 48%;
+    right: 3.2%;
+    width: 18.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button9 {
+    position: absolute;
+    top: 28%;
+    left: 11.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button10 {
+    position: absolute;
+    top: 48%;
+    left: 11.3%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button11 {
+    position: absolute;
+    top: 28%;
+    right: 3.2%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+.start-button12 {
+    position: absolute;
+    top: 48%;
+    right: 3.2%;
+    width: 20.2%;
+    height: 15.2%;
+    cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .cover-image {
+        width: 100%;
+        height: auto;
+    }
+}
